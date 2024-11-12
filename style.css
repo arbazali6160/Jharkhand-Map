@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-shrink: 0;
+}
+
+.jharkhand-map {
+  width: 800px;
+  height: 700px;
+}
+
+.weather-info {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  margin: 20px auto;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  width: fit-content;
+  /* min-height: 2rem;
+  width: 15rem; */
+  padding: 10px;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  cursor: move;
+  user-select: none;
+}
+
+#temperatureDisplay {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.weather-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.temperature {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffd700;
+}
+#weatherLabel{
+  float: left;
+}
+#weatherDetails {
+  margin-bottom: 20px;
+  float: right;
+}
+
+.hourly-forecast {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.hourly-forecast table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.hourly-forecast th, .hourly-forecast td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+.hourly-forecast img {
+  width: 30px;
+  height: 30px;
+}
+#seeMoreBtn {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#seeMoreBtn:hover {
+  background-color: #666;
+}
